@@ -1,1 +1,6 @@
 download_test/*
+download_test/files/*
+download_test/files/multi/*
+download_test/files/single/*
+
+
