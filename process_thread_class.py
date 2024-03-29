@@ -37,7 +37,7 @@ class MyProcess(Process):
 if __name__ == "__main__":
     procs = []
     for i in range(1, 11):
-        proc = MyProcess(i , name="process " + str(i))
+        proc = MyProcess(i, name="process " + str(i))
         procs.append(proc)
         proc.start()
         time.sleep(3)
