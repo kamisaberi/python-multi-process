@@ -23,9 +23,8 @@ def download_image(link: str):
 with  open('links.txt', "rt") as links:
     threads = []
     for link in links:
-        th = threading.Thread(target=download_image, args=(link,))
+        th = threading.Thread(target=download_image, args=(link.strip(),))
         th.start()
-        th.join()
         threads.append(th)
     for thread in threads:
         thread.join()
