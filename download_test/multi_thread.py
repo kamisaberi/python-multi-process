@@ -14,7 +14,7 @@ def download_image(link: str):
     name = link.strip().split("/")[-1].strip().split("?")[0].strip().split(".")[0]
     content = requests.get(link.strip()).content
     # name = ''.join(random.choices(string.ascii_lowercase + string.digits, k=10))
-    with open(n := "files/single/" + name + "." + ext, "wb") as file:
+    with open(n := "files/multi/" + name + "." + ext, "wb") as file:
         file.write(content)
         print(n)
     print(link)
